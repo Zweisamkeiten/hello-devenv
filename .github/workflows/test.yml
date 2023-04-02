@@ -10,7 +10,7 @@ jobs:
     - uses: cachix/install-nix-action@v18
     - uses: cachix/cachix-action@v12
       with:
-        name: nix-getting-started-template
+        name: zweisamkeiten
         extraPullNames: devenv
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
     - run: nix profile install github:cachix/devenv/latest
